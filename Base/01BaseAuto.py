@@ -140,10 +140,10 @@ def main():
             by=AppiumBy.XPATH
         )
         # 点击"已预约"标签
-        # auto.click_element(
-        #     locator="//android.widget.TextView[@text='已预约']",
-        #     by=AppiumBy.XPATH
-        # )
+        auto.click_element(
+            locator="cn.damai:id/trade_project_detail_purchase_status_bar_container_fl",
+            by=AppiumBy.ID
+        )
         # 验证点击结果
         print("操作完成！")
 
