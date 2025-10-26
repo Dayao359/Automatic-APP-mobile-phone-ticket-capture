@@ -6,10 +6,8 @@ import time
 
 class SettingsAutomation:
     """设置应用自动化类"""
-
     def __init__(self):
         self.driver = None
-
     def setup_driver(self):
         """初始化驱动"""
         options = UiAutomator2Options()
@@ -53,3 +51,8 @@ class SettingsAutomation:
         element = self.find_element(locator, by)
         element.clear()
         element.send_keys(text)
+
+def main():
+    auto = SettingsAutomation()
+    auto.setup_driver()
+
